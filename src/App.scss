@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  height: 100%;
+
+  .PokemonList {
+    width: 30%;
+  }
+
+  .PokemonViewer {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,17 @@
+@import './assets/fonts/fonts';
+
+body {
+  overflow-y: hidden;
+}
+
+html, body, #root  {
+  height: 100%;
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-family: 'Pokemon GB';
+  text-transform: uppercase;
+}

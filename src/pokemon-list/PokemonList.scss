@@ -1,0 +1,68 @@
+.PokemonList {
+  .list-container,
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    overflow-y: auto;
+  }
+
+  .list-container {
+    max-height: 100%;
+  }
+
+  .input-container {
+    margin-bottom: 1rem;
+
+    input {
+      font-size: 0.8rem;
+      height: 2rem;
+      padding: 1rem 2rem;
+      text-transform: none;
+      width: 100%;
+    }
+  }
+
+  .list-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    position: relative;
+    text-align: left;
+
+    &.selected::after {
+      visibility: visible;
+    }
+
+    &::after {
+      background-image: url('https://archives.bulbagarden.net/media/upload/6/67/Pok%C3%A9_Ball_summary_IV.png');
+      background-repeat: no-repeat;
+      content: ' ';
+      height: 1rem;
+      left: 0.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      visibility: hidden;
+      width: 1rem;
+    }
+
+    &:hover {
+      background-color: #f8f9fa;
+    }
+
+    & + .list-item {
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+
+  .empty-state {
+    line-height: 2;
+    text-align: center;
+  }
+}
