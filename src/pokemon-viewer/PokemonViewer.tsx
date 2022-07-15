@@ -7,7 +7,6 @@ interface Props {
 }
 
 function PokemonViewer({ currentPokemon }: Props) {
-  // display pokemon info, with the Pokemon type from src/models/pokemon.ts
   return (
     <div className="PokemonViewer">
       {currentPokemon ? (
