@@ -5,11 +5,10 @@ import { Pokemon } from "../models/pokemon";
 import "./PokemonList.scss";
 
 interface Props {
-  currentPokemon: Pokemon | undefined;
   setCurrentPokemon: React.Dispatch<React.SetStateAction<Pokemon | undefined>>;
 }
 
-function PokemonList({ setCurrentPokemon, currentPokemon }: Props) {
+function PokemonList({ setCurrentPokemon }: Props) {
   const [searchedPokemon, setSearchedPokemon] = useState<string>("");
   const [selected, setSelected] = useState<string>("");
   const { pokemonList } = useGetFirstGen();

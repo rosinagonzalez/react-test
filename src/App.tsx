@@ -9,10 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <PokemonList
-        currentPokemon={currentPokemon}
-        setCurrentPokemon={setCurrentPokemon}
-      />
+      <PokemonList setCurrentPokemon={setCurrentPokemon} />
       <PokemonViewer currentPokemon={currentPokemon} />
     </div>
   );
